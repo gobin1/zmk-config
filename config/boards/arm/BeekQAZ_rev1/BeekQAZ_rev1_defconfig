@@ -29,6 +29,3 @@ CONFIG_EC11_TRIGGER_GLOBAL_THREAD=n
 
 # Build change in zephyr 3
 CONFIG_BUILD_OUTPUT_UF2=y
-
-# Enable control of external power
-CONFIG_ZMK_EXT_POWER	
