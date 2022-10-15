@@ -57,7 +57,7 @@
 		default_layer {
 			bindings = <
 	&mt LCTRL Q      &kp W         &kp E         &kp R         &kp T            &kp Y            &kp U            &kp I            &kp O            &kp P
-	&lt NAV A        &kp S         &kp D         &kp F         &kp G            &kp H            &kp J            &kp K            &kp L            &lt MISC SQT
+	&lt NAV A        &kp S         &kp D         &kp F         &kp G            &kp H            &kp J            &kp K            &kp L            &kp SQT
 	&mt LSHIFT Z     &kp X         &kp C         &kp V         &kp B            &kp N            &kp M            &kp COMMA        &kp DOT         
     &kp LALT         &kp LGUI                                       &lt NUMSYM SPACE                                               &mt LALT SEMI    &mt LCTRL FSLH   
 			>;
@@ -88,9 +88,9 @@
 		};
 		misc_layer {
 			bindings = <
-	&bootloader      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4     &trans          &trans            &kp UP            &reset 
-	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &kp LEFT          &kp RIGHT         &trans
-	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &kp DOWN          &trans        
+	&bootloader      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4     &trans          &trans            &trans         &reset 
+	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &trans            &trans         &trans
+	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &trans            &trans        
     &trans           &trans                                         &trans                                                          &bt BT_NXT       &bt BT_CLR   
 			>;
 		};
