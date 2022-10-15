@@ -11,18 +11,6 @@
 #define FUNC		3
 #define MISC		4
 
-/ {
-    behaviors {
-        alt_tab: altgui_tab {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ALT_TAB";
-            #binding-cells = <11>;
-            bindings = <&kp A>, <&kp TAB>;
-            mods = <(MOD_LGUI|MOD_LALT|MOD_RALT)>;
-	    keep-mods = <(MOD_LGUI|MOD_LALT)>;
-        };
-    };
-};
 
 / {
 	combos {
