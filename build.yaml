@@ -13,5 +13,4 @@
 #
 ---
 include:
-  - board: bluemicro840_v1
-    shield: qaz
+  - board: BeekQAZ_rev0.1
