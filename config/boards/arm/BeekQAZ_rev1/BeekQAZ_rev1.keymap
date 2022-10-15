@@ -56,10 +56,10 @@
 		
 		default_layer {
 			bindings = <
-	&kp Q            &kp W         &kp E         &kp R         &kp T            &kp Y            &kp U            &kp I            &kp O            &kp P   
-	&kp A            &kp S         &kp D         &kp F         &kp G            &kp H            &kp J            &kp K            &kp L            &lt MISC SQT
-	&kp Z            &kp X         &kp C         &kp V         &kp B            &kp N            &kp M            &kp CMMA         &kp DOT         
-    &kp LCTRL        &mo NAV                                   &lt NUMSYM SPACE                                                    &kp RALT         &kp RGUI   
+	&mt LCTRL Q      &kp W         &kp E         &kp R         &kp T            &kp Y            &kp U            &kp I            &kp O            &kp P
+	&lt NAV A        &kp S         &kp D         &kp F         &kp G            &kp H            &kp J            &kp K            &kp L            &lt MISC SQT
+	&mt LSHIFT Z     &kp X         &kp C         &kp V         &kp B            &kp N            &kp M            &kp COMMA        &kp DOT         
+    &kp LALT         &kp LGUI                                       &lt NUMSYM SPACE                                               &mt LALT SEMI    &mt LCTRL FSLH   
 			>;
 		};
 		numsym_layer {
