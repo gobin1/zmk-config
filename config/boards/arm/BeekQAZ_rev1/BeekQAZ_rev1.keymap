@@ -64,10 +64,10 @@
 		};
 		numsym_layer {
 			bindings = <
-	&kp N1           &kp N2        &kp N3        &kp N4        &kp N5           &kp N6           &kp N7           &kp N8           &kp N9           &kp N0   
-	&kp EXCL         &kp AT        &kp HASH      &kp DLLR      &kp PERCENT      &kp QUESTION     &kp PLUS         &kp MINUS        &kp KP_ASTERISK  &kp KP_SLASH
-	&kp LBRC         &kp LPAR      &kp RPAR      &kp RBRC      &trans           &kp BACKSLASH    &kp SEMICOLON    &kp SQT          &kp EQUAL         
-    &trans           &trans                                    &trans                                                              &kp RSHFT        &trans   
+	&kp N1           &kp N2        &kp N3        &kp N4        &kp N5           &kp N6           &kp N7           &kp N8           &kp N9           &kp N0
+	&kp F1           &kp F2        &kp F3        &kp F4        &kp F5           &kp F6           &kp MINUS        &kp EQUAL        &kp LBKT         &kp RBKT
+	&kp F7           &kp F8        &kp F9        &kp F10       &kp F11          &kp F12          &trans           &trans           &trans
+    &trans           &trans                                         &trans                                                         &kp GRAVE        &kp BSLH   
 			>;
 		};
 		nav_layer {
