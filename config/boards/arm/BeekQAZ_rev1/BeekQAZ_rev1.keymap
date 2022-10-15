@@ -42,9 +42,9 @@
 		
 		default_layer {
 			bindings = <
-	&kp Q            &kp W         &kp E         &kp R         &kp T            &kp Y            &kp U            &kp I            &kp D            &kp N   
+	&mt LCTRL Q      &kp W         &kp E         &kp R         &kp T            &kp Y            &kp U            &kp I            &kp O            &kp P   
 	&kp A            &kp S         &kp D         &kp F         &kp G            &kp H            &kp J            &kp K            &kp L            &kp ENTER
-	&kp Z            &kp X         &kp C         &kp V         &lt BLUETOOTH B  &kp N            &kp M            &kp CMMA         &kp DOT         
+	&mt LSHIFT Z     &kp X         &kp C         &kp V         &lt BLUETOOTH B  &kp N            &kp M            &kp CMMA         &kp DOT         
     &kp LCTRL        &mo NAV                                   &lt NUMSYM SPACE                                                    &kp RALT         &kp RGUI   
 			>;
 		};
@@ -66,7 +66,7 @@
 		};
 		bluetooth_layer {
 			bindings = <
-	&bootloader      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none            &none            &none           &none             &none            &none 
+	&bootloader      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR	    &none            &none           &none             &none            &none 
 	&none            &none         &none         &none         &none            &none            &none           &none             &none            &reset
 	&none            &none         &none         &none         &trans           &none            &none           &none             &none        
     &ext_power EP_TOG&none                                     &none                                                               &none            &none   
