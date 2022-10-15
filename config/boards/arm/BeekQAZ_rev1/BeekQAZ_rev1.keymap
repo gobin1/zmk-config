@@ -88,10 +88,10 @@
 		};
 		misc_layer {
 			bindings = <
-	&bootloader      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none            &none            &none           &none             &none            &none 
-	&none            &none         &none         &none         &none            &none            &none           &none             &none            &reset
-	&none            &mo FUNC         &none         &none         &trans           &none            &none           &none             &none        
-    &ext_power EP_TOG&none                                     &none                                                               &none            &none   
+	&bootloader      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4     &trans          &trans            &UP              &reset 
+	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &LEFT             &RIGHT           &trans
+	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &DOWN             &trans        
+    &trans           &trans                                         &trans                                                          &bt BT_NXT       &bt BT_CLR   
 			>;
 		};
 	};
