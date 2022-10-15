@@ -12,6 +12,19 @@
 #define MISC		4
 
 / {
+    behaviors {
+        alt_tab: altgui_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ALT_TAB";
+            #binding-cells = <11>;
+            bindings = <&kp A>, <&kp TAB>;
+            mods = <(MOD_LGUI|MOD_LALT|MOD_RALT)>;
+	    keep-mods = <(MOD_LGUI|MOD_LALT)>;
+        };
+    };
+};
+
+/ {
 	combos {
 	compatible = "zmk,combos";
 		combo_esc {
@@ -29,6 +42,11 @@
 			key-positions = <8 9>;
 			bindings = <&kp BSPC>;
 		};
+		combo_enter {
+			timeout-ms = <27>;
+			key-positions = <19 20>;
+			bindings = <&kp ENTER>;
+		};
 		combo_media_prev {
 			timeout-ms = <27>;
 			key-positions = <1 2>;
@@ -41,7 +59,7 @@
 			layers = <2>;
 			bindings = <&kp C_NEXT>;
 		};
-		combo_media_next {
+		combo_misc_layer {
 			timeout-ms = <27>;
 			key-positions = <30 31>;
 			layers = <0>;
@@ -59,7 +77,7 @@
 	&mt LCTRL Q      &kp W         &kp E         &kp R         &kp T            &kp Y            &kp U            &kp I            &kp O            &kp P
 	&lt NAV A        &kp S         &kp D         &kp F         &kp G            &kp H            &kp J            &kp K            &kp L            &kp SQT
 	&mt LSHIFT Z     &kp X         &kp C         &kp V         &kp B            &kp N            &kp M            &kp COMMA        &kp DOT         
-    &kp LALT         &kp LGUI                                       &lt NUMSYM SPACE                                               &mt LALT SEMI    &mt LCTRL FSLH   
+    &kp LALT         &kp LGUI                                       &lt NUMSYM SPACE                                               &mt RALT SEMI    &mt RCTRL FSLH   
 			>;
 		};
 		numsym_layer {
@@ -89,7 +107,7 @@
 		misc_layer {
 			bindings = <
 	&bootloader      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4     &trans          &trans            &trans         &reset 
-	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &trans            &trans         &trans
+	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &trans            &trans         &ext_power EP_TOG
 	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &trans            &trans        
     &trans           &trans                                         &trans                                                          &bt BT_NXT       &bt BT_CLR   
 			>;
