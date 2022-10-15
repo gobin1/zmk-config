@@ -13,4 +13,4 @@
 #
 ---
 include:
-  - board: BeekQAZ_rev0.1
+  - board: BeekQAZ_rev1
