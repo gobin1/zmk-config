@@ -13,7 +13,7 @@
 
 / {
     behaviors {
-        alt_tab: altgui_tab {
+        alt_tab: alt_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_TAB";
             #binding-cells = <0>;
