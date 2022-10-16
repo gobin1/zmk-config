@@ -17,7 +17,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_TAB";
             #binding-cells = <0>;
-            bindings = <&kp A>, <&kp TAB>;
+            bindings = <&kp S>, <&kp TAB>;
             mods = <(MOD_LALT|MOD_RALT|MOD_LGUI)>;
             keep-mods = <(MOD_LALT|MOD_LGUI)>;
         };
@@ -44,7 +44,7 @@
 		};
 		combo_enter {
 			timeout-ms = <27>;
-			key-positions = <19 20>;
+			key-positions = <18 19>;
 			bindings = <&kp ENTER>;
 		};
 		combo_media_prev {
@@ -61,7 +61,7 @@
 		};
 		combo_misc_layer {
 			timeout-ms = <27>;
-			key-positions = <30 31>;
+			key-positions = <29 30>;
 			layers = <0>;
 			bindings = <&mo MISC>;
 		};
