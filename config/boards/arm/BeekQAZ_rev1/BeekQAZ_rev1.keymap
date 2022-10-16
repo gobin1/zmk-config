@@ -13,13 +13,13 @@
 
 / {
     behaviors {
-        alt_tab: altgui_tab {
+        bspc_del: backspace_delete {
             compatible = "zmk,behavior-mod-morph";
-            label = "ALT_TAB";
-            #binding-cells = <12>;
-            bindings = <&kp S>, <&kp TAB>;
-            mods = <(MOD_LGUI|MOD_LALT|MOD_RALT)>;
-	    keep-mods = <(MOD_LGUI|MOD_LALT)>;
+            label = "BACKSPACE_DELETE";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
         };
     };
 };
