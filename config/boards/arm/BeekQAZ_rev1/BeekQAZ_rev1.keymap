@@ -17,7 +17,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_TAB";
             #binding-cells = <0>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            bindings = <&kp S>, <&kp TAB>;
             mods = <(MOD_LALT|MOD_RALT|MOD_LGUI)>;
             keep-mods = <(MOD_LALT|MOD_LGUI)>;
         };
