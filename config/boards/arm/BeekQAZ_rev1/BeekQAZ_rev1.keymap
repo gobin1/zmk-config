@@ -70,15 +70,8 @@
     };
 };
 
-gqt: global-quick-tap {
-    compatible = "zmk,behavior-hold-tap";
-    label = "GLOBAL_QUICK_TAP";
-    #binding-cells = <2>;
-    flavor = "tap-preferred";
-    tapping-term-ms = <200>;
+&mt {
     quick-tap-ms = <125>;
-    global-quick-tap;
-    bindings = <&kp>, <&kp>;
 };
 
 / {
@@ -106,7 +99,7 @@ gqt: global-quick-tap {
 	&trans           &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PP      &trans          &kp HOME         &kp PG_UP        &trans           &kp PSCRN        &kp BSPC
 	&trans           &trans         &kp DEL       &trans        &trans          &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &trans
 	&trans           &trans         &kp CAPS      &trans        &trans          &kp END          &kp PG_DN        &trans           &kp ENTER        
-    &trans           &td0                                       &trans                                                         &trans           &trans   
+    &trans           &td0                                       &kp LSHIFT                                                         &trans           &trans   
 			>;
 		};
 		func_layer {
