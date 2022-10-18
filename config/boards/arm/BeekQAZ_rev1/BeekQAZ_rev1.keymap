@@ -70,6 +70,10 @@
     };
 };
 
+&mt {
+    quick-tap-ms = <125>;
+};
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
