@@ -21,13 +21,6 @@
             mods = <(MOD_LALT|MOD_RALT|MOD_LGUI)>;
             keep-mods = <(MOD_LALT|MOD_LGUI)>;
         };
-	td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_FUNC_LAYER";
-            #binding-cells = <1>;
-            tapping-term-ms = <200>;
-            bindings = <&mo FUNC>, <&tog FUNC>;
-        };
     };
 };
 
