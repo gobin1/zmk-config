@@ -88,7 +88,7 @@
 	&trans           &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PP      &trans          &kp HOME         &kp PG_UP        &trans           &kp PSCRN        &kp BSPC
 	&trans           &trans         &kp DEL       &trans        &trans          &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &trans
 	&trans           &trans         &kp CAPS      &trans        &trans          &kp END          &kp PG_DN        &trans           &kp ENTER        
-    &trans           &td0                                       &trans                                                         &trans           &trans   
+    &trans           &kp A                                       &trans                                                         &trans           &trans   
 			>;
 		};
 		func_layer {
