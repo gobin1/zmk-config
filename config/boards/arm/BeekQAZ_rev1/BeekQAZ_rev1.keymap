@@ -21,9 +21,13 @@
             mods = <(MOD_LALT|MOD_RALT|MOD_LGUI)>;
             keep-mods = <(MOD_LALT|MOD_LGUI)>;
         };
-	&mt {
-    	    quick-tap-ms = <125>;
-	};
+	td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_FUNC_LAYER";
+            #binding-cells = <1>;
+            tapping-term-ms = <200>;
+            bindings = <&mo FUNC>, <&tog FUNC>;
+        };
     };
 };
 
@@ -91,7 +95,7 @@
 	&trans           &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PP      &trans          &kp HOME         &kp PG_UP        &trans           &kp PSCRN        &kp BSPC
 	&trans           &trans         &kp DEL       &trans        &trans          &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &trans
 	&trans           &trans         &kp CAPS      &trans        &trans          &kp END          &kp PG_DN        &trans           &kp ENTER        
-    &trans           &mo FUNC                                       &trans                                                         &trans           &trans   
+    &trans           &td0                                       &trans                                                         &trans           &trans   
 			>;
 		};
 		func_layer {
