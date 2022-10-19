@@ -6,11 +6,12 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 #define DEFAULT 	0
-#define NUMSYM 		1
-#define NAV		2	
-#define FUNC		3
-#define MISC		4
-#define GAME            5
+#define GAME            1
+#define NUMSYM 		2
+#define NAV		3	
+#define FUNC		4
+#define MISC		5
+
 
 / {
     behaviors {
@@ -38,31 +39,31 @@
 		combo_tab {
 			timeout-ms = <27>;
 			key-positions = <11 12>;
-			layers = <0 1 2 3 4>;
+			layers = <0 2 3 4 5>;
 			bindings = <&kp TAB>;
 		};
 		combo_bpc {
 			timeout-ms = <27>;
 			key-positions = <8 9>;
-			layers = <0 1 2 3 4>;
+			layers = <0 2 3 4 5>;
 			bindings = <&kp BSPC>;
 		};
 		combo_enter {
 			timeout-ms = <27>;
 			key-positions = <16 17>;
-			layers = <0 1 2 3 4>;
+			layers = <0 2 3 4 5>;
 			bindings = <&kp ENTER>;
 		};
 		combo_media_prev {
 			timeout-ms = <27>;
 			key-positions = <1 2>;
-			layers = <2>;
+			layers = <3>;
 			bindings = <&kp C_PREV>;
 		};
 		combo_media_next {
 			timeout-ms = <27>;
 			key-positions = <2 3>;
-			layers = <2>;
+			layers = <3>;
 			bindings = <&kp C_NEXT>;
 		};
 		combo_misc_layer {
@@ -74,13 +75,13 @@
 		combo_game_layer {
 			timeout-ms = <27>;
 			key-positions = <18 19 27>;
-			layers = <0 5>;
+			layers = <0 1>;
 			bindings = <&tog GAME>;
 		};
 		combo_gamelayer_p {
 			timeout-ms = <27>;
 			key-positions = <8 9>;
-			layers = <5>;
+			layers = <1>;
 			bindings = <&kp P>;
 		};
     };
@@ -107,6 +108,14 @@
 	&alt_tab         &kp S         &kp D         &kp F         &kp G            &kp H            &kp J            &kp K            &kp L            &kp SQT
 	&mt LSHIFT Z     &kp X         &kp C         &kp V         &kp B            &kp N            &kp M            &kp COMMA        &mt RSHIFT DOT         
     &mt LALT ESC         &kp LGUI                                       &lt NUMSYM SPACE                                               &mt RALT SEMI    &mt RCTRL FSLH   
+			>;
+		};
+		game_layer {
+			bindings = <
+	&kp ESC          &kp Q         &kp W         &kp E         &kp R           &kp T            &kp Y            &kp U            &kp I            &kp O 
+	&kp TAB          &kp A         &kp S         &kp D         &kp F           &kp G            &kp H            &kp J            &kp K            &kp L           
+	&kp LSHIFT       &kp Z         &kp X         &kp C         &kp V           &kp B            &kp N            &kp M            &kp ENTER        
+    &kp LCTRL         &mo NUMSYM                                       &kp SPACE                                               &kp LALT    &kp BSPC   
 			>;
 		};
 		numsym_layer {
@@ -139,14 +148,6 @@
 	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &trans            &trans         &ext_power EP_TOG
 	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &trans            &trans        
     &trans           &trans                                        &trans                                                          &bt BT_NXT       &bt BT_CLR   
-			>;
-		};
-		game_layer {
-			bindings = <
-	&kp ESC          &kp Q         &kp W         &kp E         &kp R           &kp T            &kp Y            &kp U            &kp I            &kp O 
-	&kp TAB          &kp A         &kp S         &kp D         &kp F           &kp G            &kp H            &kp J            &kp K            &kp L           
-	&kp LSHIFT       &kp Z         &kp X         &kp C         &kp V           &kp B            &kp N            &kp M            &kp ENTER        
-    &kp LCTRL         &mo NUMSYM                                       &kp SPACE                                               &kp LALT    &kp BSPC   
 			>;
 		};	
 	};
