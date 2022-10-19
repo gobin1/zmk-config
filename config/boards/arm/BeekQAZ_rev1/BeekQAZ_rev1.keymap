@@ -38,16 +38,19 @@
 		combo_tab {
 			timeout-ms = <27>;
 			key-positions = <10 11>;
+			layers = <0 1 2 3 4>;
 			bindings = <&kp TAB>;
 		};
 		combo_bpc {
 			timeout-ms = <27>;
-			key-positions = <8 9>;
+			key-positions = <8 9>
+			layers = <0 1 2 3 4>;
 			bindings = <&kp BSPC>;
 		};
 		combo_enter {
 			timeout-ms = <27>;
 			key-positions = <16 17>;
+			layers = <0 1 2 3 4>;
 			bindings = <&kp ENTER>;
 		};
 		combo_media_prev {
