@@ -37,7 +37,7 @@
 	compatible = "zmk,combos";
 		combo_tab {
 			timeout-ms = <27>;
-			key-positions = <10 11>;
+			key-positions = <11 12>;
 			layers = <0 1 2 3 4>;
 			bindings = <&kp TAB>;
 		};
@@ -73,7 +73,7 @@
 		};
 		combo_game_layer {
 			timeout-ms = <27>;
-			key-positions = <0 29 33>;
+			key-positions = <18 19 27>;
 			layers = <0 5>;
 			bindings = <&tog GAME>;
 		};
