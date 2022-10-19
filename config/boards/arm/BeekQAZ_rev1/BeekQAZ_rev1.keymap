@@ -87,7 +87,8 @@
 };
 
 &mt {
-    retro-tap;
+    flavor = "balance";
+    tapping-term-ms = <300>;
     quick-tap-ms = <200>;
 };
 
