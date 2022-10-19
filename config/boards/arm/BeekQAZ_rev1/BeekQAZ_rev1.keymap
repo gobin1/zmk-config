@@ -73,7 +73,7 @@
 		};
 		combo_game_layer {
 			timeout-ms = <27>;
-			key-positions = <0 29 33>;
+			key-positions = <9 33>;
 			layers = <0 5>;
 			bindings = <&tog GAME>;
 		};
@@ -87,6 +87,11 @@
 };
 
 &mt {
+    retro-tap;
+    quick-tap-ms = <200>;
+};
+
+&lt {
     retro-tap;
     quick-tap-ms = <200>;
 };
