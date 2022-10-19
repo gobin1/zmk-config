@@ -77,7 +77,7 @@
 			layers = <0 5>;
 			bindings = <&tog GAME>;
 		};
-		combo_game_layer_P {
+		combo_gamelayer_p {
 			timeout-ms = <27>;
 			key-positions = <8 9>;
 			layers = <5>;
@@ -87,11 +87,6 @@
 };
 
 &mt {
-    retro-tap;
-    quick-tap-ms = <200>;
-};
-
-&lt {
     retro-tap;
     quick-tap-ms = <200>;
 };
@@ -137,7 +132,7 @@
 	&bootloader      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4     &trans          &trans            &trans         &reset 
 	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &trans            &trans         &ext_power EP_TOG
 	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &trans            &trans        
-    &trans           &trans                                         &trans                                                          &bt BT_NXT       &bt BT_CLR   
+    &trans           &trans                                        &trans                                                          &bt BT_NXT       &bt BT_CLR   
 			>;
 		};
 		game_layer {
