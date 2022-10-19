@@ -10,6 +10,7 @@
 #define NAV		2	
 #define FUNC		3
 #define MISC		4
+#define GAME            5
 
 / {
     behaviors {
@@ -67,10 +68,27 @@
 			layers = <0>;
 			bindings = <&mo MISC>;
 		};
+		combo_game_layer {
+			timeout-ms = <27>;
+			key-positions = <0 29 33>;
+			layers = <0 5>;
+			bindings = <&tog GAME>;
+		};
+		combo_game_layer_P {
+			timeout-ms = <27>;
+			key-positions = <8 9>;
+			layers = <5>;
+			bindings = <&kp P>;
+		};
     };
 };
 
 &mt {
+    retro-tap;
+    quick-tap-ms = <200>;
+};
+
+&lt {
     retro-tap;
     quick-tap-ms = <200>;
 };
@@ -91,7 +109,7 @@
 			bindings = <
 	&kp N1           &kp N2        &kp N3        &kp N4        &kp N5           &kp N6           &kp N7           &kp N8           &kp N9           &kp N0
 	&kp F1           &kp F2        &kp F3        &kp F4        &kp F5           &kp F6           &kp MINUS        &kp EQUAL        &kp LBKT         &kp RBKT
-	&mt LSHIFT F7           &kp F8        &kp F9        &kp F10       &kp F11          &kp F12          &trans           &trans           &trans
+	&mt LSHIFT F7    &kp F8        &kp F9        &kp F10       &kp F11          &kp F12          &trans           &trans           &trans
     &trans           &trans                                         &trans                                                         &kp GRAVE        &kp BSLH   
 			>;
 		};
@@ -105,9 +123,9 @@
 		};
 		func_layer {
 			bindings = <
-	&trans           &trans        &kp UP           &trans         &trans          &kp N7           &kp N8          &kp N9            &trans           &trans
-	&trans           &kp LEFT      &kp DOWN         &kp RIGHT      &trans          &kp N4           &kp N5          &kp N6            &trans           &trans
-	&trans           &trans        &trans        &trans         &trans          &kp N1           &kp N2          &kp N3            &trans           
+	&trans           &trans        &kp UP         &trans         &trans          &kp N7           &kp N8          &kp N9            &trans           &trans
+	&trans           &kp LEFT      &kp DOWN       &kp RIGHT      &trans          &kp N4           &kp N5          &kp N6            &trans           &trans
+	&trans           &trans        &trans         &trans         &trans          &kp N1           &kp N2          &kp N3            &trans           
     &trans           &trans                                         &kp N0                                                          &trans          &trans   
 			>;
 		};
@@ -119,6 +137,13 @@
     &trans           &trans                                         &trans                                                          &bt BT_NXT       &bt BT_CLR   
 			>;
 		};
+		game_layer {
+			bindings = <
+	&kp ESC          &kp Q         &kp W         &kp E         &kp R           &kp T            &kp Y            &kp U            &kp I            &kp O 
+	&kp TAB          &kp A         &kp S         &kp D         &kp F           &kp G            &kp H            &kp J            &kp K            &kp L           
+	&kp LSHIFT       &kp Z         &kp X         &kp C         &kp V           &kp B            &kp N            &kp M            &kp ENTER        
+    &kp LCTRL         &mo NUMSYM                                       &kp SPACE                                               &kp LALT    &kp BSPC   
+			>;
 	};
 
 
