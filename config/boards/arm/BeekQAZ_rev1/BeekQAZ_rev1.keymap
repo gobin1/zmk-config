@@ -147,6 +147,7 @@
 	&kp LSHIFT       &kp Z         &kp X         &kp C         &kp V           &kp B            &kp N            &kp M            &kp ENTER        
     &kp LCTRL         &mo NUMSYM                                       &kp SPACE                                               &kp LALT    &kp BSPC   
 			>;
+		};	
 	};
 
 
