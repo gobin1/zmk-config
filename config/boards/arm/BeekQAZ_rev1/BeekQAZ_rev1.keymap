@@ -73,13 +73,13 @@
 		};
 		combo_game_layer {
 			timeout-ms = <27>;
-			key-positions = <9 33>;
+			key-positions = <0 29 33>;
 			layers = <0 5>;
 			bindings = <&tog GAME>;
 		};
 		combo_gamelayer_p {
 			timeout-ms = <27>;
-			key-positions = <8 9>;
+			key-positions = <7 9>;
 			layers = <5>;
 			bindings = <&kp P>;
 		};
