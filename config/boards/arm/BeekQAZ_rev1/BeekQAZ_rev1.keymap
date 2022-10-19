@@ -71,8 +71,7 @@
 };
 
 &mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <400>;
+    global-quick-tap;
     quick-tap-ms = <200>;
 };
 
