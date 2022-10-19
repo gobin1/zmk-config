@@ -71,7 +71,7 @@
 };
 
 &mt {
-    global-quick-tap;
+    retro-tap;
     quick-tap-ms = <200>;
 };
 
