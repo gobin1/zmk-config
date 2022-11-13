@@ -28,28 +28,28 @@
             label = "ARROW_UP";
             #binding-cells = <0>;
             bindings = <&kp O>, <&kp UP>;
-            mods = <(MOD_RCTRL)>;
+            mods = <(MOD_RCTL)>;
         };
 	arrow_down: arrow_down {
             compatible = "zmk,behavior-mod-morph";
             label = "ARROW_DOWN";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp DOWN>;
-            mods = <(MOD_RCTRL)>;
+            mods = <(MOD_RCTL)>;
         };
 	arrow_left: arrow_left {
             compatible = "zmk,behavior-mod-morph";
             label = "ARROW_LEFT";
             #binding-cells = <0>;
             bindings = <&kp K>, <&kp LEFT>;
-            mods = <(MOD_RCTRL)>;
+            mods = <(MOD_RCTL)>;
         };
 	arrow_right: arrow_right {
             compatible = "zmk,behavior-mod-morph";
             label = "ARROW_RIGHT";
             #binding-cells = <0>;
             bindings = <&kp L>, <&kp RIGHT>;
-            mods = <(MOD_RCTRL)>;
+            mods = <(MOD_RCTL)>;
         };
 	td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
