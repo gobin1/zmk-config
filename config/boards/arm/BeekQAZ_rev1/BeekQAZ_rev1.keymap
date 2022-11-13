@@ -28,28 +28,28 @@
             label = "ARROW_UP";
             #binding-cells = <0>;
             bindings = <&kp O>, <&kp UP>;
-            mods = <(MOD_RALT)>;
+            mods = <(MOD_RCTRL)>;
         };
 	arrow_down: arrow_down {
             compatible = "zmk,behavior-mod-morph";
             label = "ARROW_DOWN";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp DOWN>;
-            mods = <(MOD_RALT)>;
+            mods = <(MOD_RCTRL)>;
         };
 	arrow_left: arrow_left {
             compatible = "zmk,behavior-mod-morph";
             label = "ARROW_LEFT";
             #binding-cells = <0>;
             bindings = <&kp K>, <&kp LEFT>;
-            mods = <(MOD_RALT)>;
+            mods = <(MOD_RCTRL)>;
         };
 	arrow_right: arrow_right {
             compatible = "zmk,behavior-mod-morph";
             label = "ARROW_RIGHT";
             #binding-cells = <0>;
             bindings = <&kp L>, <&kp RIGHT>;
-            mods = <(MOD_RALT)>;
+            mods = <(MOD_RCTRL)>;
         };
 	td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -138,9 +138,9 @@
 		default_layer {
 			bindings = <
 	&mt LCTRL Q      &kp W         &kp E         &kp R         &kp T            &kp Y            &kp U            &kp I            &arrow_up        &kp P
-	&alt_tab         &kp S         &kp D         &kp F         &kp G            &kp H            &kp J            &arrow_left      &arrow_right     &kp SQT
+	&alt_tab         &kp S         &kp D         &kp F         &kp G            &kp H            &kp J            &arrow_left      &arrow_right     &mt RCTRL SQT
 	&mt LSHIFT Z     &kp X         &kp C         &kp V         &kp B            &kp N            &kp M            &arrow_down      &mt RSHIFT DOT         
-    &mt LALT ESC         &kp LGUI                                       &lt NUMSYM SPACE                                               &mt RALT SEMI    &mt RCTRL FSLH   
+    &mt LALT ESC         &kp LGUI                                       &lt NUMSYM SPACE                                               &mt RALT SEMI    &kp FSLH   
 			>;
 		};
 		game_layer {
