@@ -140,7 +140,7 @@
 	&mt LCTRL Q      &kp W         &kp E         &kp R         &kp T            &kp Y            &kp U            &kp I            &arrow_up        &kp P
 	&alt_tab         &kp S         &kp D         &kp F         &kp G            &kp H            &kp J            &arrow_left      &arrow_right     &kp SQT
 	&mt LSHIFT Z     &kp X         &kp C         &kp V         &kp B            &kp N            &kp M            &arrow_down      &mt RSHIFT DOT         
-    &mt LALT ESC         &kp LGUI                                       &lt NUMSYM SPACE                                               &mt RCTRL SEMI    &mt RALT FSLH   
+    &mt LALT ESC         &kp LGUI                                       &lt NUMSYM SPACE                                               &mt RALT SEMI    &mt RCTRL FSLH   
 			>;
 		};
 		game_layer {
