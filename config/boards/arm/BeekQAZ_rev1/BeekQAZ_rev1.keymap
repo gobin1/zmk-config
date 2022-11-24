@@ -15,6 +15,15 @@
 
 / {
     behaviors {
+    	sk: shift_keys {
+            compatible = "zmk,behavior-hold-tap";
+            label = "SHIFT_KEYS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
         alt_tab: alt_tab {
             compatible = "zmk,behavior-mod-morph";
             label = "ALT_TAB";
@@ -123,7 +132,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <140>;
+    tapping-term-ms = <160>;
     quick-tap-ms = <200>;
 };
 
@@ -139,7 +148,7 @@
 			bindings = <
 	&mt LCTRL Q      &kp W         &kp E         &kp R         &kp T            &kp Y            &kp U            &kp I            &arrow_up        &kp P
 	&alt_tab         &kp S         &kp D         &kp F         &kp G            &kp H            &kp J            &arrow_left      &arrow_right     &mt RCTRL SQT
-	&mt LSHIFT Z     &kp X         &kp C         &kp V         &kp B            &kp N            &kp M            &arrow_down      &mt RSHIFT DOT         
+	&sk LSHIFT Z     &kp X         &kp C         &kp V         &kp B            &kp N            &kp M            &arrow_down      &mt RSHIFT DOT         
     &mt LALT ESC         &kp LGUI                                       &lt NUMSYM SPACE                                               &mt RALT SEMI    &kp FSLH   
 			>;
 		};
