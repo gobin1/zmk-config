@@ -186,7 +186,7 @@
 		};
 		misc_layer {
 			bindings = <
-	&bootloader      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &trans          &trans           &trans          &trans            &trans         &reset 
+	&bootloader      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &trans          &trans           &trans          &trans            &trans         &sys_reset 
 	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &trans            &trans         &ext_power EP_TOG
 	&trans           &trans        &trans        &trans         &trans          &trans           &trans          &trans            &trans        
     &trans           &trans                                        &trans                                                          &bt BT_NXT       &bt BT_CLR   
