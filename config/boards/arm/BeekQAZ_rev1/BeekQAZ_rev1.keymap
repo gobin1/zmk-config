@@ -29,7 +29,7 @@
             label = "ALT_TAB";
             #binding-cells = <0>;
             bindings = <&lt NAV A>, <&kp TAB>;
-            mods = <(MOD_LALT|MOD_RALT|MOD_LGUI)>;
+            mods = <(MOD_LALT|MOD_LGUI)>;
             keep-mods = <(MOD_LALT|MOD_LGUI)>;
         };
 	arrow_up: arrow_up {
@@ -149,7 +149,7 @@
 	&mt LCTRL Q      &kp W         &kp E         &kp R         &kp T            &kp Y            &kp U            &kp I            &arrow_up        &kp P
 	&alt_tab         &kp S         &kp D         &kp F         &kp G            &kp H            &kp J            &arrow_left      &arrow_right     &mt RCTRL SQT
 	&skz LSHIFT Z     &kp X         &kp C         &kp V         &kp B            &kp N            &kp M            &arrow_down      &mt RSHIFT DOT         
-    &mt LALT ESC         &kp LGUI                                       &lt NUMSYM SPACE                                               &mt RALT SEMI    &kp FSLH   
+    &mt LALT ESC         &kp LGUI                                       &lt NUMSYM SPACE                                                &mt RGUI SEMI    &mt RALT FSLH
 			>;
 		};
 		game_layer {
